@@ -1,6 +1,6 @@
 # Text answers from Week 0
 
-# Name:
+# Name: Pat Byrnes (PMByrnes)
 
 
 
@@ -13,21 +13,25 @@ Explain what each of the following lines does. Use the terminology you learned f
 
 Answer:
 
+from TurtleWorld import * imports everything from the TurtleWorld module
 
+world = TurtleWorld() assigns TurtleWorld to 'world'
 
+bob = Turtle() assigns a Turtle to 'bob'
 
+wait_for_user() tells the program to wait for the user to do something
 
 
 These questions pertain to the program you wrote in Week0.
 
 -- What are the arguments of polygon()?  What type is each argument?
-Answer:
+Answer:  Arguments are: Turtle, n, and length.  Turtle is a string, n and length are both integers.
 
 -- What two turtle functions did you use to draw the sides of the polygon?
-Answer:
+Answer: fd and lt
 
 -- What are the arguments for polyline?  What type is each argument?
-Answer:
+Answer: Arguments are: Turtle (string), n (integer), length (integer), angle (float)
 
 
 
@@ -36,10 +40,10 @@ Answer:
 Suppose you wrote a function, center_circle(), that draws a circle of a given radius around the current location of the turtle and restores the turtle to its starting point.
 
 -- What turtle functions would you use to move the turtle from the center to the edge of the circle and get ready to call the original circle() function?
-Answer:
+Answer: pu, fd, lt and pd
 
 -- Suppose the interface of this function requires the turtle to end up in the same place it started, facing in the same direction it started.
-Answer:
+Answer: Would also need to incorporate pu, rt, bk for when the turtle completed a 360-degree arc
 
 -- What is this type of requirement called?
-Answer:
+Answer: Postcondition
